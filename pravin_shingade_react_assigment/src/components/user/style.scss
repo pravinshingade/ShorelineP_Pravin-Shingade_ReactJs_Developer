@@ -1,0 +1,126 @@
+
+.page-head {
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.column-padding {
+    padding: 26px 0px;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.flex-end {
+    justify-content: flex-end;
+}
+
+.btn {
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-width: 1px;
+    border-style: solid;
+    border-image: initial;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    font-family: Montserrat, sans-serif;
+    border-color: rgb(51, 153, 204);
+
+    &__button-primary {
+        background-color: rgb(51, 153, 204);
+        color: white;
+    }
+    &__button-secondary {
+        background-color: white;
+        color: rgb(51, 153, 204);
+    }
+}
+.btn:disabled {
+  background-color: rgb(124, 119, 119);
+  cursor: auto;
+  border-color: rgb(124, 119, 119);
+}
+
+
+.table {
+    width: auto !important;
+  
+    &__head {
+      display: flex;
+      justify-content: space-between;
+      min-height: 45px;
+      background-color: rgb(231, 246, 252);
+      border-bottom: 1px solid rgb(27, 26, 26);
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+  
+    &__body {
+      background-color: white;
+      min-height: 500px;
+    }
+
+  
+    &__item {
+      &:hover {
+        background-color: rgb(231, 246, 252);
+      }
+    }
+  
+    &__row {
+      position: relative;
+      min-height: 60px;
+        &__col {
+            padding: 15px 0px !important;
+        }
+    }
+  
+    & .col {
+      padding: 0;
+      flex-basis: 100%;
+  
+      &:first-child {
+        padding-left: 10px !important;
+        max-width: 5%;
+        min-width: 5%;
+      }
+  
+      &:nth-child(2) {
+        min-width: 25%;
+        max-width: 25%;
+      }
+  
+      &:nth-child(3) {
+        min-width: 25%;
+        max-width: 25%;
+      }
+  
+      &:nth-child(4) {
+        min-width: 20%;
+        max-width: 20%;
+      }
+  
+      &:nth-child(5) {
+        max-width: 15%;
+      }
+  
+      &:nth-child(6) {
+        max-width: 10%;
+        text-align: left !important;
+      }
+    }
+}
+
+  
